@@ -7,7 +7,7 @@ function b(bx,by){
 }
 
 function c(cx,cy) {
-	return Math.pow(4,5);
+	return Math.pow(cs,cy);
 }
 
 function d(number) {
@@ -25,7 +25,7 @@ function e(ex){
 
 function f(fx,fy) {
 	var array = [];
-	for (var i=0; i < y; i++){
+	for (var i=0; i < fy; i++){
 
 		array.push(fx);
 	}

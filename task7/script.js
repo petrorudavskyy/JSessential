@@ -23,8 +23,8 @@ function startGame(){
 
 		if (parseInt(guess) === randomNumber ) {
 
-  			document.write('<p>You guessed the number!</p>');
-  			document.write('<p>You won ' + price1 + ' $');
+  			alert('You guessed the number! You won ' + price1 + ' $');
+  			secondAttemp();
 
 		}  else {
 
@@ -43,8 +43,8 @@ function secondAttemp(){
 
 		if (parseInt(guess) === randomNumber ) {
 
-  			document.write('<p>You guessed the number!</p>');
-  			document.write('<p>You won ' + price2 + ' $');
+			alert('You guessed the number! You won ' + price2 + ' $');
+  			thirdAttemp();
 
 		}  else {
 
@@ -63,8 +63,8 @@ function thirdAttemp(){
 
 		if (parseInt(guess) === randomNumber ) {
 
-  			document.write('<p>You guessed the number!</p>');
-  			document.write('<p>You won ' + price3 + ' $');
+			alert('You guessed the number! You won ' + price3 + ' $');
+  			start();
 
 		}  else {
 
@@ -73,3 +73,5 @@ function thirdAttemp(){
 
 		}	
 }
+
+
