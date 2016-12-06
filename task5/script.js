@@ -12,8 +12,8 @@ function c(cx,cy) {
 
 function d(number) {
 	var obj = {
-		a : number;
-	}
+		a : number
+	};
 	return obj;
 }
 
