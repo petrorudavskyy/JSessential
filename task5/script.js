@@ -7,7 +7,7 @@ function b(bx,by){
 }
 
 function c(cx,cy) {
-	return Math.pow(cs,cy);
+	return Math.pow(cx,cy);
 }
 
 function d(number) {
