@@ -1,4 +1,7 @@
+var count = 1;
 start();
+
+randomNumber = Math.floor(Math.random() * 5 ) + 1;
 
 //First function , question
 function start(){
@@ -7,15 +10,19 @@ function start(){
 	if (wantPlay) {
 		startGame();		
 	}	else {
-			console.log('Today you will not win the jackpot, but you could');		
+			alert('Today you will not win the jackpot, but you could');		
 	}
+
+	
 }
 
 //second function, startgame
 
+
 function startGame(){
 
-	var price1 = 10;
+	var price1 = 10 * count;
+	console.log(price1);
 	//random number
 	var randomNumber = Math.floor(Math.random() * 5 ) + 1;
 	//window
@@ -24,7 +31,7 @@ function startGame(){
 		if (parseInt(guess) === randomNumber ) {
 
   			alert('You guessed the number! You won ' + price1 + ' $');
-  			secondAttemp();
+  			start();
 
 		}  else {
 
@@ -36,7 +43,8 @@ function startGame(){
 // third function, second attemp
 function secondAttemp(){
 
-	var price2 = 5;
+	var price2 = 5 * count;
+	console.log(price2);
 	var randomNumber = Math.floor(Math.random() * 5 ) + 1;
 
 	var guess = prompt('I am thinking of a random number between 1 and 5. What is it? Use second attemp;');
@@ -44,7 +52,7 @@ function secondAttemp(){
 		if (parseInt(guess) === randomNumber ) {
 
 			alert('You guessed the number! You won ' + price2 + ' $');
-  			thirdAttemp();
+  			start();
 
 		}  else {
 
@@ -56,7 +64,9 @@ function secondAttemp(){
 //fourth function, third attemp
 function thirdAttemp(){
 
-	var price3 = 2;
+	var price3 = 2 * count;
+	console.log(price3);
+	count *= 3;
 	var randomNumber = Math.floor(Math.random() * 5 ) + 1;
 
 	var guess = prompt('I am thinking of a random number between 1 and 5. What is it? Use third attemp;');
