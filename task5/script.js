@@ -33,12 +33,7 @@ function f(fx,fy) {
 }
 
 function g(gx) {
-	if (gx) {
-		return gx;
-	}
-	else {
-		return 99;
-	}
+	return gx ? gx : 99;
 }
 
 function h(hx){

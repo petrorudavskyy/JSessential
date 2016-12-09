@@ -18,7 +18,7 @@ var pcNumber = Math.random()*100;
 				alert('Our number is higher. Try again!');
 				break;
 			}
-
+			
 			else {
 
 				alert('GREAT! You have cheats)');
